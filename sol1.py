@@ -20,7 +20,7 @@ trans_15 = transactions[transactions['dbd'] == 15].copy()
 # Load Indian holidays
 indian_holidays = holidays.India(years=range(2018, 2026))
 
-# Create features
+# Creating features
 def create_features(df):
     df['doj_weekday'] = df['doj'].dt.weekday
     df['doj_month'] = df['doj'].dt.month
